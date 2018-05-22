@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/search_icon_gray"/>
+        <EditText
+            android:padding="5dp"
+            android:hint="可以搜索案例，随笔，商家等。"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"/>
+
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#999999"
+    android:gravity="center"
+    android:minHeight="50dp"
+    android:text="顶部标题"
+    android:textColor="#fff"
+    app:layout_scrollFlags="scroll" />
+        <GridView android:id="@+id/gv"
+         android:layout_margin="10dp"
+         android:background="#FFF"
+         android:numColumns="4"
+         android:layout_width="match_parent"
+         android:layout_height="160dp"
+        app:layout_scrollFlags="scroll" />
+
+    <LinearLayout
+    android:id="@+id/liner"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <TextView
+     android:drawableRight="@drawable/select_triangle_nor"
+    android:id="@+id/tv_title1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="找摄影"
+    android:textColor="#000"
+    android:textSize="14sp" />
+        <TextView
+            android:drawableRight="@drawable/select_triangle_nor"
+    android:id="@+id/tv_title2"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="黄冈"
+    android:textColor="#000"
+    android:textSize="14sp" />
+        <TextView
+            android:drawableRight="@drawable/select_triangle_nor"
+    android:id="@+id/tv_title3"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="综合排序"
+    android:textColor="#000"
+    android:textSize="14sp" />
+        <TextView
+            android:drawableRight="@drawable/select_triangle_nor"
+    android:id="@+id/tv_title4"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="筛选"
+    android:textColor="#000"
+    android:textSize="14sp" />
+</LinearLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+
+    android:id="@+id/recycle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
